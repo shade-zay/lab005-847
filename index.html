@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div>
+        <!-- Game buttons for Rock, Paper, Scissors -->
+        <button onclick="play('rock')">Rock</button>
+        <button onclick="play('paper')">Paper</button>
+        <button onclick="play('scissors')">Scissors</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        // Function to handle the game logic (will be expanded later)
+        function play(playerChoice) {
+            document.getElementById('result').innerText = `You chose ${playerChoice}.`;
+        }
+    </script>
+</body>
+</html>
